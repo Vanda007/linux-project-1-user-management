@@ -46,7 +46,7 @@ cat /etc/passwd | grep tester
 sudo mkdir /project_app
 sudo mkdir /backup
 ```
-### Cek Hasil
+Cek Hasil
 ```bash
 ls -ld /project_app
 ls -ld /backup
@@ -56,7 +56,7 @@ ls -ld /backup
 ```bash
 sudo chown developer:developer /project_app
 ```
-### Cek Hasil
+Cek Hasil
 ```bash
 ls -ld /project_app
 ```
@@ -65,11 +65,37 @@ ls -ld /project_app
 ```bash
 sudo chmod 755 /project_app
 ```
-### Cek Hasil
+Cek Hasil
 ```bash
 ls -ld /project_app
 ```
-Penjelasan chmod 755 :
+Penjelasan permission 755 :
 - Owner (developer) -> read, write, execute
 - Group -> read, execute
 - Others (tester) -> read, execute
+
+### 6. Testing Akses
+- Login sebagai developer
+```bash
+su - developer
+cd /project_app
+touch test.txt
+```
+Hasil : Berhasil membuat file
+
+- Login sebagai tester
+```bash
+su - tester
+cd /project_app
+touch text1.txt
+```
+Hasil : Gagal (Permission denied), karena tester tidak memiliki permission write pada folder /project_app
+
+### 7. Setup Folder Backup
+```bash
+sudo chown developer:developer /backup
+sudo chmod 700 /backup
+```
+Penjelasan permission 700 : <br>
+Hanya owner (developer) yang memiliki akses penuh, user lain tidak dapat read, write, execute
+
