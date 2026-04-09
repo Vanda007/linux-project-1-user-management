@@ -52,7 +52,7 @@ Login sebagai developer <br>
 su - developer
 cd /project\_app
 touch test.txt <br>
-Hasil : Berhasil membuat file
+Hasil : Berhasil membuat file <br>
 
 Login sebagai tester <br>
 su - tester
