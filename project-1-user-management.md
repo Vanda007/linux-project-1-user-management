@@ -26,27 +26,33 @@ Linux Distro : Ubuntu
 **⚙️ Langkah-Langkah :**
 
 1. **Membuat User**
+   
 sudo useradd -m -s /bin/bash developer
 sudo useradd -m -s /bin/bash tester
 
-2. **Memberikan Password**
+3. **Memberikan Password**
+   
 sudo passwd developer
 sudo passwd tester
 
-3. **Membuat Folder Project**
+5. **Membuat Folder Project**
+   
 sudo mkdir /project\_app
 sudo mkdir /backup
 
-4. **Mengatur Ownership**
+7. **Mengatur Ownership**
+   
 sudo chown developer:developer /project\_app
 
-5. **Mengatur Permission**
+9. **Mengatur Permission**
+    
 sudo chmod 755 /project\_app
 Penjelasan :
 Owner (developer) -> read, write, execute
 Others (tester) -> read, execute
 
-6. **Testing Akses
+11. **Testing Akses
+    
 Login sebagai developer**
 su - developer
 cd /project\_app
@@ -54,6 +60,7 @@ touch test.txt
 Hasil : Berhasil membuat file
 
 **Login sebagai tester**
+
 su - tester
 cd /project\_app
 touch gagal.txt
@@ -61,6 +68,7 @@ Hasil : Gagal (Permission denied) karena tester tidak memiliki permission write 
 
 
 7. **Setup Folder Backup**
+   
 sudo chown developer:developer /backup
 sudo chmod 700 /backup
 
@@ -69,6 +77,7 @@ Hanya owner (developer) yang memiliki akses penuh
 User lain tidak dapat read, write, execute
 
 8. Testing Backup Akses
+
 su - tester
 cd /backup
 Hasil : Permission denied
