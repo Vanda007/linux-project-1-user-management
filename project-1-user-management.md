@@ -27,3 +27,29 @@ Environment menggunakan WSL (Windows Subsystem for Linux) sehingga dapat meniru 
 ```bash
 sudo useradd -m -s /bin/bash developer
 sudo useradd -m -s /bin/bash tester
+```
+
+
+### 2. Membuat Password
+```bash
+sudo passwd developer
+sudo passwd tester
+```
+### Cek User
+```bash
+cat /etc/passwd | grep developer
+cat /etc/passwd | grep tester
+```
+
+### 3. Membuat Folder Project
+```bash
+sudo mkdir /project_app
+sudo mkdir /backup
+```
+### Cek Hasil
+```bash
+ls -ld /project_app
+ls -l /backup
+```
+
+
