@@ -38,7 +38,7 @@ sudo mkdir /project\_app
 sudo mkdir /backup
 
 5. **Mengatur Ownership** <br>
-sudo chown developer:developer /project\_app
+sudo chown developer:developer /project\_app <br>
 
 6. **Mengatur Permission** <br>
 sudo chmod 755 /project\_app <br>
@@ -47,7 +47,7 @@ Penjelasan : <br>
 Owner (developer) -> read, write, execute <br>
 Others (tester) -> read, execute
 
-7. **Testing Akses**
+7. **Testing Akses** <br>
 Login sebagai developer <br>
 su - developer
 cd /project\_app
@@ -64,7 +64,6 @@ Hasil : Gagal (Permission denied) karena tester tidak memiliki permission write 
 8. **Setup Folder Backup** <br>
 sudo chown developer:developer /backup
 sudo chmod 700 /backup
-<br>
 Penjelasan permission 700 : <br>
 Hanya owner (developer) yang memiliki akses penuh <br>
 User lain tidak dapat read, write, execute
@@ -72,8 +71,8 @@ User lain tidak dapat read, write, execute
 9. **Testing Backup Akses** <br>
 su - tester
 cd /backup <br>
-Hasil : Permission denied
-<br>
+Hasil : Permission denied <br>
+
 su - developer
 cd /backup
 Hasil : Berhasil mengakses folder
