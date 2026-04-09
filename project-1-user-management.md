@@ -113,3 +113,19 @@ su - developer
 cd /backup
 ```
 Hasil : Berhasil mengkases folder
+
+---
+
+## 📊 Hasil 
+- User berhasil dibuat
+- Permission berjalan sesuai kebutuhan
+- User developer memiliki akses penuh
+- User tester hanya memiliki akses terbatas
+
+---
+
+## 🧠 Insight 
+Melalui project ini saya memahami bahwa pengaturan permission sangat penting dalam menjaga keamanan sistem.
+Kesalahan dalam pemberian hak akses dapat menyebabkan user yang tidak berwenang mengakses atau memodifikasi data penting.
+
+---
