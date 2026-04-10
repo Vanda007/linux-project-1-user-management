@@ -138,7 +138,8 @@ cd /backup
 Hasil : Berhasil mengkases folder
 
 ### Eksekusi Command di Terminal :
-![img](screenshots/8-testing-backup-accesss.png)
+![img](screenshots/8-testing-backup-access.png)
+
 ---
 
 ## 📊 Hasil 
