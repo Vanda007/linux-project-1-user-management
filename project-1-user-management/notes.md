@@ -24,13 +24,17 @@ Environment menggunakan WSL (Windows Subsystem for Linux) sehingga dapat meniru 
 ## ⚙️ Langkah-Langkah
 
 ### 1. Membuat User
+### Command :
 ```bash
 sudo useradd -m -s /bin/bash developer
 sudo useradd -m -s /bin/bash tester
 ```
+### Eksekusi Command di Terminal :
+![img](screenshots/1-create-user.png)
 
 
 ### 2. Membuat Password
+### Command :
 ```bash
 sudo passwd developer
 sudo passwd tester
@@ -40,6 +44,8 @@ sudo passwd tester
 cat /etc/passwd | grep developer
 cat /etc/passwd | grep tester
 ```
+### Eksekusi Command di Terminal :
+![img](screenshots/2-check-user.png)
 
 ### 3. Membuat Folder Project
 ```bash
