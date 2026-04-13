@@ -75,6 +75,10 @@ sudo nano /var/www/project2/index.html
 sudo chown -R $USER:$USER /var/www/project2
 sudo chmod -R 755 /var/www/project2
 ```
+
+### Eksekusi Command di Terminal :
+![img](dokumentasi/4-permission.png)
+
 **Penjelasan :**
 - **Parameter $USER:$USER /var/www/project2** <br>
   → berarti user yang sedang aktif dijadikan sebagai owner dan group dari folder tersebut
@@ -82,6 +86,7 @@ sudo chmod -R 755 /var/www/project2
   7 (owner) - read, write, execute <br>
   5 (group) - read, execute <br>
   5 (others) - read, execute
+
 
 ### 7. Konfigurasi Nginx
 ### Command :
@@ -102,6 +107,9 @@ server {
   }
 }
 ```
+
+### Eksekusi Command di Terminal :
+![img](dokumentasi/5-nginx-config.png)
 
 **Penjelasan :**
 - **listen 80** → menentukan server akan berjalan di port 80, yaitu port default untuk HTTP
@@ -129,6 +137,9 @@ sudo ln -s /etc/nginx/sites-available/project2 /etc/nginx/sites-enabled/
 sudo nginx -t
 ```
 
+### Eksekusi Command di Terminal
+![img](dokumentasi/6-nginx-test.png)
+
 ### 10. Restart Nginx
 ### Command :
 ```bash
@@ -148,6 +159,8 @@ Tambahkan:
 ```bash
 http://project2.local
 ```
+
+![img](dokumentasi/7-project-2-local.png)
 
 ---
 
