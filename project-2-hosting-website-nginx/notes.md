@@ -31,21 +31,19 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-### Eksekusi Command di Terminal :
-
 ### 2. Install Nginx
 ### Command :
 ```bash
 sudo apt install nginx -y
 ```
 
-### Eksekusi Command di Terminal :
-
 ### 3. Cek Status Nginx
 ### Command :
 ```bash
 sudo service nginx status
 ```
+
+### Eksekusi Command di Terminal :
 
 ### 4. Membuat Folder Website
 ### Command :
