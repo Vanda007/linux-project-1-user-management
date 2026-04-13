@@ -65,6 +65,7 @@ sudo nano /var/www/project2/index.html
 ```
 
 ### 6. Mengatur Permission
+### Command :
 ```bash
 sudo chown -R $USER:$USER /var/www/project2
 sudo chmod -R 755 /var/www/project2
@@ -76,3 +77,27 @@ Penjelasan :
   7 (owner) - read, write, execute <br>
   5 (group) - read, execute <br>
   5 (others) - read, execute
+
+### 7. Konfigurasi Nginx
+### Command :
+```bash
+sudo nano /etc/nginx/sites-available/project2
+```
+### Isi konfigurasi
+```bash
+server {
+  listen 80;
+  server_name project2.local;
+
+  root /var/www/project2;
+  index index.html;
+
+  location/ {
+    try_files $uri $uri/ =404;
+  }
+}
+```
+
+Penjelasan :
+- listen 80 -> menentukan server akan berjalan di port 80, yaitu port default untuk HTTP
+- 
