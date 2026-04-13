@@ -144,14 +144,20 @@ Tambahkan:
 http://project2.local
 ```
 
-### 📊 Hasil
+---
+
+## 📊 Hasil
 - Nginx berhasil diinstall dan dijalankan
 - Website berhasil dibuat dan diakses
 - Domain lokal (project2.local) berhasil digunakan
 - Konfigurasi virtual host berjalan dengan baik
 
-### 🧠 Insight
+---
+
+## 🧠 Insight
 - Memahami cara kerja web server nginx
 - Menetahui konsep virtual host
 - Memahami hubungan antara domai dan server
 - Mampu melakukan deployment website sederhana di lingkungan Linux
+
+---
