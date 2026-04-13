@@ -44,6 +44,7 @@ sudo service nginx status
 ```
 
 ### Eksekusi Command di Terminal :
+![img](dokumentasi/1-nginx-status.png)
 
 ### 4. Membuat Folder Website
 ### Command :
