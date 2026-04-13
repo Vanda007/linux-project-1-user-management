@@ -112,3 +112,46 @@ server {
 **Kesimpulan :** <br>
 Konfigurasi ini digunakan untuk menghubungkan domain (project2.local) dengan folder website di server, sehingga website dapat diakses melalui browser seperti layaknya server di dunia nyata.
 
+### 8. Mengaktifkan Config 
+### Command :
+```bash
+sudo ln -s /etc/nginx/sites-available/project2 /etc/nginx/sites-enabled/
+```
+
+### 9. Test Konfigurasi
+### Command :
+```bash
+sudo nginx -t
+```
+
+### 10. Restart Nginx
+### Command :
+```bash
+sudo service nginx restart
+```
+
+### 11. Konfigurasi Hosts di Windows
+### Edit File :
+```bash
+C:\Windows\System32\drivers\etc\hosts
+Tambahkan:
+127.0.0.1 project2.local
+```
+
+### 12. Akses Website
+### Buka browser :
+```bash
+http://project2.local
+```
+
+### 📊 Hasil
+- Nginx berhasil diinstall dan dijalankan
+- Website berhasil dibuat dan diakses
+- Domain lokal (project2.local) berhasil digunakan
+- Konfigurasi virtual host berjalan dengan baik
+
+### 🧠 Insight
+- Memahami cara kerja web server nginx
+- Menetahui konsep virtual host
+- Memahami hubungan antara domai dan server
+- Mampu melakukan deployment website sederhana di lingkungan Linux
