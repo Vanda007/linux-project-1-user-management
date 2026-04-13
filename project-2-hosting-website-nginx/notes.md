@@ -72,7 +72,7 @@ sudo chmod -R 755 /var/www/project2
 ```
 **Penjelasan :**
 - **Parameter $USER:$USER /var/www/project2** <br>
-  -> berarti user yang sedang aktif dijadikan sebagai owner dan group dari folder tersebut
+  → berarti user yang sedang aktif dijadikan sebagai owner dan group dari folder tersebut
 - **Permission 755** <br>
   7 (owner) - read, write, execute <br>
   5 (group) - read, execute <br>
@@ -99,12 +99,12 @@ server {
 ```
 
 **Penjelasan :**
-- **listen 80** -> menentukan server akan berjalan di port 80, yaitu port default untuk HTTP
-- **server_name project2.local** -> menentukan domain atau nama host yg digunakan untuk mengakses website
-- **root /var/www/project2** -> menentukan direktori utama tempat file website disimpan
-- **index index.html** -> menentukan file default yang akan dibuka ketika user mengakses domain tanpa menyebutkan nama file
-- **location/** -> mengatur bagaimana nginx menangani request ke path / (halaman utama website)
-- **try_files $uri $uri/ =404** ->
+- **listen 80** → menentukan server akan berjalan di port 80, yaitu port default untuk HTTP
+- **server_name project2.local** → menentukan domain atau nama host yg digunakan untuk mengakses website
+- **root /var/www/project2** → menentukan direktori utama tempat file website disimpan
+- **index index.html** → menentukan file default yang akan dibuka ketika user mengakses domain tanpa menyebutkan nama file
+- **location/** → mengatur bagaimana nginx menangani request ke path / (halaman utama website)
+- **try_files $uri $uri/ =404** →
   Mencari file sesuai URL yang diminta
   Jika tidak ada, mencoba sebagai folder
   Jika tetap tidak ditemukan, akan menampilkan error 404 <br>
