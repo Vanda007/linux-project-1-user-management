@@ -23,9 +23,22 @@ Melalui projek ini, dilakukan simulasi koneksi ke server, verifikasi akses user,
 ---
 
 ## ⚙️ Langkah-Langkah
-### 1. Install SSH server
+### 1. Install SSH Server
 ### Command :
 ```bash
 sudo apt update
 sudo apt install openssh-server -y
 ```
+
+### 2. Cek Status SSH
+### Command :
+```bash
+sudo service ssh status
+```
+**Pastikan status : active (running)**
+
+### 3. Test Remote (localhost)
+```bash
+ssh developer@localhost
+```
+Jika muncul ***Are you sure you want to continue connecting (yes/no)?***, pilih ***yes*** kemudian masukkan password user developer
