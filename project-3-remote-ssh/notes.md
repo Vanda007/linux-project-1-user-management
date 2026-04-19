@@ -62,6 +62,18 @@ sudo nano /etc/ssh/sshd_config
 Kemudian cari dan ubah **PermitRootLogin yes** menjadi **PermitRootLogin no**
 
 **Penjelasan :** <br>
-PermitRootLogin digunakan untuk mengatur apakah user root boleh login melalui ssh, jika diatur ke no maka login root akan ditolak oleh sistem.<br>
-Tujuannya meningkatkan keamanan server dan mencegah akses langsung ke root.<br>
-Login root dinonaktifkan sehingga akses ke server dilakukan melalui user biasa.
+- PermitRootLogin digunakan untuk mengatur apakah user root boleh login melalui ssh, jika diatur ke no maka login root akan ditolak oleh sistem.<br>
+- Tujuannya meningkatkan keamanan server dan mencegah akses langsung ke root.<br>
+- Login root dinonaktifkan sehingga akses ke server dilakukan melalui user biasa.
+
+### 7. Restart SSh Service
+### Command :
+```bash
+sudo service ssh restart
+```
+
+### 8. Testing Security
+```bash
+ssh root@localhost
+```
+Hasil : Permission denied
