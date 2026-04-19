@@ -37,6 +37,8 @@ sudo service ssh status
 ```
 **Pastikan status : active (running)**
 
+![img](dokumentasi/1-ssh-status.png)
+
 ### 3. Test Remote (localhost)
 ```bash
 ssh developer@localhost
@@ -47,6 +49,8 @@ Jika muncul ***Are you sure you want to continue connecting (yes/no)?***, pilih 
 ```bash
 Setelah berhasil login, cek dengan whoami maka outputnya akan developer
 ```
+
+![img](dokumentasi/2-whoami.png)
 
 ### 5. Keluar dari SSH
 ```bash
@@ -77,3 +81,5 @@ sudo service ssh restart
 ssh root@localhost
 ```
 Hasil : Permission denied
+
+![img](dokumentasi/3-root-denied.png)
